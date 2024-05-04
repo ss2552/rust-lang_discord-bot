@@ -1,0 +1,2 @@
+# discord-chatgpt
+discordのChatGPTボット
