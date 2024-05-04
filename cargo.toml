@@ -1,0 +1,8 @@
+[package]
+authors = ["esu"]
+edition = "2024"
+name = "ChatGPT"
+version = "1.0.0"
+
+[dependencies]
+serenity = {version = "0.12"}
