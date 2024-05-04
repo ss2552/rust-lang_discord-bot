@@ -18,3 +18,4 @@ jobs:
     - uses: actions/checkout@v4
     - name: deploy
       run: cargo build
+      run: cargo test
