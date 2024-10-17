@@ -4,9 +4,6 @@ on:
   push:
     branches: [ "main" ]
 
-env:
-  TOKEN: ${{secrets.TOKEN}}
-
 jobs:
   deploy:
 
@@ -15,4 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: deploy
-      run: cargo build
+      run: \
+        - ls
+        - cargo build
