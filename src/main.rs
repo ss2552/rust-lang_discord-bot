@@ -1,22 +1,9 @@
 use std::env;
-use serenity::model::channel::Message;
-use serenity::prelude::{Client, Context, EventHandler};
-use serenity::async_trait;
-
-struct Handler;
-
-#[async_trait]
-impl EventHandler for Handler {
-	async fn message(&self, ctx: Context, msg: Message){
-		msg.channel_id.say(&ctx, msg.content);
-	}
- }
+use serenity::prelude::{Client};
  
 #[tokio::main]
 async fn main() {
-    let token = std::env::args.collect()[0];
-    let mut client = Client::builder(token).event_handler(Handler).await?;
-    if let Err(why) = client.start().await {
-        println!("問題→{why:?}");
-    }
+    let mut args = std::env::args.collect();
+    let mut client = Client::builder(args[1]).event_handler(Handler).await?;
+    client.start().await?;
 }
