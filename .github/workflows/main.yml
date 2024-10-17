@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: deploy
-      run: \
-        - ls
-        - cargo build
+    - run: echo "hello go to deploy rust program"
+    - run: ls
+    - run: cargo build
+    - run: ls
