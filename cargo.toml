@@ -7,7 +7,3 @@ version = "1.0.0"
 [dependencies]
 serenity = {version = "0.12"}
 tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread"] }
-
-[[bin]]
-name = "main"
-path = "main.rs"
