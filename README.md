@@ -1,2 +1,2 @@
-# discord-chatgpt
-discordのChatGPTボット
+# discord-Bot
+discordのBot
