@@ -14,7 +14,7 @@ impl EventHandler for Handler {
  
 #[tokio::main]
 async fn main() {
-    let token = env::var("TOKEN").expect("");
+    let token = std::env::args.collect()[0];
     let mut client = Client::builder(token).event_handler(Handler).await?;
     if let Err(why) = client.start().await {
         println!("問題→{why:?}");
