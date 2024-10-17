@@ -1,6 +1,6 @@
 [package]
 authors = ["esu"]
-edition = "2024"
+edition = "2021"
 name = "DiscordBot"
 version = "1.0.0"
 
