@@ -6,12 +6,6 @@ jobs:
   deploy:
     runs-on: alpine-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: deploy
-      - run: echo "hello go to deploy rust program"
-      - name: 1a
-      - run: ls
-      - name: 2a
-      - run: cargo build
-      - name: 3a
-      - run: ls
+    - uses: actions/checkout@v4
+    - name: deploy
+    - run: ls
