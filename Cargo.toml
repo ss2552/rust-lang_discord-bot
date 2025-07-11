@@ -1,9 +1,12 @@
 [package]
 authors = ["esu"]
+name = "rust-DiscordBot"
+version = "0.0.0"
 edition = "2021"
-name = "DiscordBot"
-version = "1.0.0"
 
 [dependencies]
-serenity = {version = "0.12"}
-tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.27.0" }
+futures-util = "0.3.31"
